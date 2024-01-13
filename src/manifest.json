@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "CSS Colors Changer",
+    "version": "1.0.0",
+    "description": "Change CSS colors dynamically from extension",
+    "author": "Robin Aldasoro",
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "CSS Colors Changer"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ]
+}
