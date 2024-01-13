@@ -1,4 +1,3 @@
-<!-- popup.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,33 +17,69 @@
 
         input {
             margin-bottom: 10px;
+            height: 30px;
             width: 100%;
         }
+
+        input[type="color"] {
+            width: 30px;
+            padding: 0;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .line {
+            display: flex;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
 <form id="colorForm">
     <label for="primary-color">Primary Color:</label>
-    <input type="text" id="primary-color" name="primary-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="primary-color" name="primary-color" placeholder="Enter haxadecimal color or select color"
+               autocomplete="color">
+    </p>
 
     <label for="secondary-color">Secondary Color:</label>
-    <input type="text" id="secondary-color" name="secondary-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="secondary-color" name="secondary-color" placeholder="Enter haxadecimal color or select color">
+    </p>
 
     <label for="hover-primary-color">Hover Primary Color:</label>
-    <input type="text" id="hover-primary-color" name="hover-primary-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="hover-primary-color" name="hover-primary-color"
+               placeholder="Enter haxadecimal color or select color">
+    </p>
 
     <label for="hover-secondary-color">Hover Secondary Color:</label>
-    <input type="text" id="hover-secondary-color" name="hover-secondary-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="hover-secondary-color" name="hover-secondary-color"
+               placeholder="Enter haxadecimal color or select color">
+    </p>
 
     <label for="primary-light-color">Primary Light Color:</label>
-    <input type="text" id="primary-light-color" name="primary-light-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="primary-light-color" name="primary-light-color"
+               placeholder="Enter haxadecimal color or select color">
+    </p>
 
     <label for="secondary-light-color">Secondary Light Color:</label>
-    <input type="text" id="secondary-light-color" name="secondary-light-color" placeholder="Enter color">
+    <p class="line">
+        <input type="color"/>
+        <input type="text" id="secondary-light-color" name="secondary-light-color"
+               placeholder="Enter haxadecimal color or select color">
+    </p>
 
     <button type="submit">Change Colors</button>
 </form>
-
 <script src="popup.js"></script>
 </body>
 </html>
