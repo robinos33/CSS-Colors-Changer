@@ -4,78 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Colors Changer</title>
-    <style>
-        body {
-            width: 200px;
-            padding: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            margin-bottom: 10px;
-            height: 30px;
-            width: 100%;
-        }
-
-        input[type="color"] {
-            width: 30px;
-            padding: 0;
-            border: none;
-            margin-right: 10px;
-        }
-
-        .line {
-            display: flex;
-            align-items: center;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<h1>Change website's colour</h1>
 <form id="colorForm">
     <label for="primary-color">Primary Color:</label>
     <p class="line">
         <input type="color"/>
-        <input type="text" id="primary-color" name="primary-color" placeholder="Enter haxadecimal color or select color"
+        <input type="text" id="primary-color" name="primary-color" placeholder="Color in #hexa"
                autocomplete="color">
     </p>
 
     <label for="secondary-color">Secondary Color:</label>
     <p class="line">
         <input type="color"/>
-        <input type="text" id="secondary-color" name="secondary-color" placeholder="Enter haxadecimal color or select color">
+        <input type="text" id="secondary-color" name="secondary-color" placeholder="Color in #hexa">
     </p>
 
     <label for="hover-primary-color">Hover Primary Color:</label>
     <p class="line">
         <input type="color"/>
         <input type="text" id="hover-primary-color" name="hover-primary-color"
-               placeholder="Enter haxadecimal color or select color">
+               placeholder="Color in #hexa">
     </p>
 
     <label for="hover-secondary-color">Hover Secondary Color:</label>
     <p class="line">
         <input type="color"/>
         <input type="text" id="hover-secondary-color" name="hover-secondary-color"
-               placeholder="Enter haxadecimal color or select color">
+               placeholder="Color in #hexa">
     </p>
 
     <label for="primary-light-color">Primary Light Color:</label>
     <p class="line">
         <input type="color"/>
         <input type="text" id="primary-light-color" name="primary-light-color"
-               placeholder="Enter haxadecimal color or select color">
+               placeholder="Color in #hexa">
     </p>
 
     <label for="secondary-light-color">Secondary Light Color:</label>
     <p class="line">
         <input type="color"/>
         <input type="text" id="secondary-light-color" name="secondary-light-color"
-               placeholder="Enter haxadecimal color or select color">
+               placeholder="Color in #hexa">
     </p>
 
     <button type="submit">Change Colors</button>
